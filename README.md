@@ -5,6 +5,7 @@
 - file FilmRS_GCN3.ipynb là phần xây dựng, huấn luyện, đánh giá và thực nghiệm mô hình đề xuất phim
 - file gcn_model.pth là mô hình được lưu lại để đưa vào hệ thống đề xuất phim
 
+Link github: https://github.com/CAO816/recommender_GCN.git
 ## Đây là sơ đồ mô hình GCN 3 lớp
 ![alt text](./image/SoDoMoHinh.png)
 ## Dữ liệu đầu vào
