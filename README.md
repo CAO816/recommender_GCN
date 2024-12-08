@@ -7,7 +7,7 @@ Mô hình sử dụng dữ liệu đầu vào là tập dữ liệu MovieLens 10
 - Dữ liệu phim: ID phim, tên phim, ngày phát hành, thể loại, …
 - Dữ liệu tương tác: thông tin về việc người dùng đã đánh giá những bộ phim nào.
 Đầu ra: Tập dữ liệu MovieLens 100k cơ bản đã được làm sạch, những người dùng có ít hơn 20 đánh giá hoặc không có thông tin nhân khẩu học đầy đủ đã bị xóa khỏi tập dữ liệu này. Ngoài ra, dữ liệu còn được tiền xử lý để đảm bảo dữ liệu đồng nhất và không bị thiếu. 
-** Phần phân tích dữ liệu nằm trong file analizing_data.ipynb **
+Phần phân tích dữ liệu nằm trong file analizing_data.ipynb
 ## Xây dựng đồ thị user-item
 ![alt text](./image/Graph_user_item.png)
 - Đồ thị này là đầu vào của mô hình GCN
