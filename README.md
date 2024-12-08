@@ -10,7 +10,7 @@ Mô hình sử dụng dữ liệu đầu vào là tập dữ liệu MovieLens 10
 ** Phần phân tích dữ liệu nằm trong file analizing_data.ipynb **
 ## Xây dựng đồ thị user-item
 ![alt text](./image/Graph_user_item.png)
-Đồ thị này là đầu vào của mô hình GCN
+- Đồ thị này là đầu vào của mô hình GCN
 ## Các lớp tích chập
 - Mô hình gồm 3 lớp GCN trích xuất các đặc trưng cho user và item
 ## Đầu ra của mô hình
