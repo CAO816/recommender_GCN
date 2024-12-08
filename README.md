@@ -1,4 +1,10 @@
 # Recommendation System Using Content-based Graph Convolutional Network (GCN)
+## Thông tin về các file
+- Thư mục ml-100k chứa dữ liệu từ tập MovieLens 100k
+- file analizing_data.ipynb là phần phân tích dữ liệu đầu vào
+- file FilmRS_GCN3.ipynb là phần xây dựng, huấn luyện, đánh giá và thực nghiệm mô hình đề xuất phim
+- file gcn_model.pth là mô hình được lưu lại để đưa vào hệ thống đề xuất phim
+
 ## Đây là sơ đồ mô hình GCN 3 lớp
 ![alt text](./image/SoDoMoHinh.png)
 ## Dữ liệu đầu vào
