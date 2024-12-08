@@ -7,7 +7,7 @@
 
 Link github: https://github.com/CAO816/recommender_GCN.git
 ## Đây là sơ đồ mô hình GCN 3 lớp
-![alt text](./image/SoDoMoHinh.png)
+![image](./image/SoDoMoHinh.png)
 ## Dữ liệu đầu vào
 Mô hình sử dụng dữ liệu đầu vào là tập dữ liệu MovieLens 100k bao gồm 100,000 đánh giá (từ 1 đến 5 sao) của 943 người dùng trên 1,682 bộ phim. Dữ liệu được thu thập thông qua trang web MovieLens trong khoảng thời gian bảy tháng từ ngày 19 tháng 9 năm 1997 đến ngày 22 tháng 4 năm 1998.
 - Dữ liệu người dùng: ID của người dùng, tuổi, giới tính, nghề nghiệp, zipcode
@@ -18,7 +18,7 @@ Mô hình sử dụng dữ liệu đầu vào là tập dữ liệu MovieLens 10
 
 Phần phân tích dữ liệu nằm trong file analizing_data.ipynb
 ## Xây dựng đồ thị user-item
-![alt text](./image/Graph_user_item.png)
+![image](./image/Graph_user_item.png)
 - Đồ thị này là đầu vào của mô hình GCN
 ## Các lớp tích chập
 - Mô hình gồm 3 lớp GCN trích xuất các đặc trưng cho user và item
