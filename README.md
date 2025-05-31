@@ -1,26 +1,27 @@
 # Recommendation System Using Content-based Graph Convolutional Network (GCN)
 ## Thông tin về các file
 - Thư mục ml-100k chứa dữ liệu từ tập MovieLens 100k
+- Thư mục ml-1m chứa dữ liệu từ tập MovieLens 1M
 - file analizing_data.ipynb là phần phân tích dữ liệu đầu vào
-- file FilmRS_GCN3.ipynb là phần xây dựng, huấn luyện, đánh giá và thực nghiệm mô hình đề xuất phim
-- file gcn_model.pth là mô hình được lưu lại để đưa vào hệ thống đề xuất phim
+- GCN_100k_content_context là mô hình đề xuất trên tập MovieLens 100k
+- GCN_1m_content_context là mô hình đề xuất trên tập MovieLens 1M
 
 Link github: https://github.com/CAO816/recommender_GCN.git
 ## Đây là sơ đồ mô hình GCN 3 lớp
-![image](./image/SoDoMoHinh.png)
-## Dữ liệu đầu vào
-Mô hình sử dụng dữ liệu đầu vào là tập dữ liệu MovieLens 100k bao gồm 100,000 đánh giá (từ 1 đến 5 sao) của 943 người dùng trên 1,682 bộ phim. Dữ liệu được thu thập thông qua trang web MovieLens trong khoảng thời gian bảy tháng từ ngày 19 tháng 9 năm 1997 đến ngày 22 tháng 4 năm 1998.
-- Dữ liệu người dùng: ID của người dùng, tuổi, giới tính, nghề nghiệp, zipcode
-- Dữ liệu phim: ID phim, tên phim, ngày phát hành, thể loại, …
-- Dữ liệu tương tác: thông tin về việc người dùng đã đánh giá những bộ phim nào.
+![image](https://github.com/user-attachments/assets/e7382720-1da6-48f9-a989-1ca93350ef3b)
 
-Đầu ra: Tập dữ liệu MovieLens 100k cơ bản đã được làm sạch, những người dùng có ít hơn 20 đánh giá hoặc không có thông tin nhân khẩu học đầy đủ đã bị xóa khỏi tập dữ liệu này. Ngoài ra, dữ liệu còn được tiền xử lý để đảm bảo dữ liệu đồng nhất và không bị thiếu. 
+![image](https://github.com/user-attachments/assets/ab55bf54-5862-410b-aeef-90fabaaf8d79)
+
+## Dữ liệu đầu vào
+Mô hình sử dụng dữ liệu huấn luyện và thực nghiệm là MovieLens 100K và MovieLens 1M
 
 Phần phân tích dữ liệu nằm trong file analizing_data.ipynb
-## Xây dựng đồ thị user-item
-![image](./image/Graph_user_item.png)
-- Đồ thị này là đầu vào của mô hình GCN
+## Xây dựng đồ thị user-item-context
+![image](https://github.com/user-attachments/assets/7a79393d-760d-4cd1-bdc8-a42005c940e1)
+
 ## Các lớp tích chập
 - Mô hình gồm 3 lớp GCN trích xuất các đặc trưng cho user và item
+## Lớp Multi-head Self-attention
+- Lớp attention này giúp mỗi đỉnh tự động học được mức độ liên quan đến các đỉnh khác trong toàn bộ đồ thị, từ đó cập nhật embedding của mình một cách linh hoạt và toàn cục hơn, vượt ra khỏi phạm vi láng giềng cục bộ mà GCN học được.
 ## Đầu ra của mô hình
 - Ma trận gồm các vector đặc trưng của người dùng và item
